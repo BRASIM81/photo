@@ -55,7 +55,8 @@ function watch() {
     browsersync.init({
         server: {
             baseDir: './dest/'
-        }
+        },
+        reloadDelay: 1800
     });
     gulp.watch('./src/sass/**/*.sass', css);
     gulp.watch('./src/js/**/*.js', javascript);
