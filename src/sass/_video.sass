@@ -1,14 +1,27 @@
 .video-wrap
   position: relative
-  height: 450px
-  overflow-y: hidden
+  height: 250px
+  overflow: hidden
+  @media (min-width: 796px)
+    height: 350px
+  @media (min-width: 975px)
+    height: 450px
   video
     position: relative
-    top: -150px
+    top: 0px
     left: 0
     right: 0
-    width: 100vw
+    height: auto
+    width: 100%
     z-index: -2
+    @media (min-width: 796px)
+      top: 0
+      width: 100%
+      height: auto
+    @media (min-width: 975px)
+      width: 100%
+      height: auto
+      top: -150px
   .video-overlay
     position: absolute
     top: 0
@@ -29,7 +42,13 @@
     justify-content: center
     h1
       font-size: 8rem
+      @media (max-width: 975px)
+        font-size: 6rem
     h3
       font-size: 2rem
       letter-spacing: 3rem
+      @media (max-width: 975px)
+        font-size: 1rem
+        letter-spacing: 2rem
+        transform: translateX(15px)
   
