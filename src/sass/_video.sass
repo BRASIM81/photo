@@ -1,11 +1,11 @@
 .video-wrap
   position: relative
-  height: 250px
+  height: 200px
   overflow: hidden
   @media (min-width: 796px)
     height: 350px
   @media (min-width: 975px)
-    height: 450px
+    height: 400px
   video
     position: relative
     top: 0px
@@ -21,14 +21,14 @@
     @media (min-width: 975px)
       width: 100%
       height: auto
-      top: -150px
+      top: -100px
   .video-overlay
     position: absolute
     top: 0
     left: 0
     height: 100%
     width: 100%
-    background-color: rgba(0,0,0,0.6)
+    background-color: rgba(0,0,0,0.4)
     z-index: -1
   .header-title
     position: absolute
@@ -41,14 +41,20 @@
     align-items: center
     justify-content: center
     h1
-      font-size: 8rem
-      @media (max-width: 975px)
+      font-size: 4rem
+      @media (min-width: 768px)
         font-size: 6rem
+      @media (min-width: 975px)
+        font-size: 8rem
     h3
-      font-size: 2rem
-      letter-spacing: 3rem
-      @media (max-width: 975px)
-        font-size: 1rem
-        letter-spacing: 2rem
+      font-size: 1rem
+      letter-spacing: 1rem
+      transform: translateX(20px)
+      @media (min-width: 768px)
+        font-size: 2rem
+        letter-spacing: 1.7rem
+      @media (min-width: 975px)
+        font-size: 2rem
+        letter-spacing: 3rem
         transform: translateX(15px)
   
