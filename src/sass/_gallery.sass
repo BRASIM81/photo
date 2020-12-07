@@ -1,0 +1,21 @@
+#gallery
+  .row
+    display: flex
+    flex-wrap: wrap
+    width: 100%
+    margin: 0
+    .column
+      flex: 33.3%
+      width: auto
+      overflow: hidden
+      padding: 0 4px
+      height: 100%
+      img
+        margin-top: 2%
+        height: 100%
+        width: 100%
+        cursor: pointer
+        filter: grayscale(0.4) brightness(0.7)
+        transition: all ease 300ms
+        &:hover
+          filter: grayscale(0) brightness(1)
