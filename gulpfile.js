@@ -33,7 +33,7 @@ function javascript(){
 }
 
 function imgmin() {
-    return gulp.src('./src/img/*.jpg')
+    return gulp.src('./src/img/**/*')
     .pipe(changed('./dest/img'))
     .pipe(imagemin([
         imagemin.gifsicle({interlaced:true}),
