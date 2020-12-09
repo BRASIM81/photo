@@ -1,2 +1,82 @@
 footer
-  height: 1000px
+  background-color: #ccc
+  .container-outer
+    background: rgba(0,0,0,0.5)
+    @media(min-width: 975px)
+      background: rgba(0,0,0,0.6)
+    .col
+      min-height: 150px
+      #copy
+        font-size: 1.5rem
+        margin-bottom: 1rem
+    .col-md-6
+      a
+        button.btn-success
+          background: linear-gradient(-8deg, lighten($forthcol, 25%) 0%, $forthcol 100%)
+          border: 0
+          font: 1.5rem $mainFont
+          letter-spacing: 0.3rem
+          text-shadow: -1px 1px 2px #000
+          transition: all ease 300ms
+          &:hover
+            transform: translateY(3px)
+            box-shadow: 0 10px 6px -7px #000
+            span
+              animation-name: tada
+              animation-duration: 1s
+          span
+            float: left
+            padding-top: 3px
+            padding-right: 5px
+.modal.fade
+  .modal-dialog
+    max-width: 50vw
+    margin: 2rem auto
+    @media (max-width: 975px)
+      max-width: 80vw
+    transition: all cubic-bezier(.21, -2, .51, 3.4) 300ms
+    .modal-content
+      .modal-header
+        button
+          font-size: 4rem
+          position: absolute
+          top: 0px
+          right: 30px
+          transition: all ease 300ms
+          &:hover
+            transform: scale(1.4)
+        h4
+          letter-spacing: 0.5rem
+          margin-bottom: 0px
+          font: 2rem $mainFont
+          i
+            float: left
+            padding-right: 5px
+            margin: 5px
+      .modal-body
+        a
+          font-size: 2rem
+          letter-spacing: 0.4rem
+          text-shadow: -1px 1px 1px #000
+          transition: all ease 300ms
+          &:hover
+            transform: translateY(3px)
+            box-shadow: 0 10px 6px -7px #000
+          i.fab, i.far
+            float: left
+            line-height: 2rem
+            margin-left: 30px
+            margin: 10px
+          &:hover
+            i.fab, i.far
+              animation-name: tada
+              animation-duration: 1s
+      .modal-footer
+        button
+          background: linear-gradient(-8deg, lighten($forthcol, 25%) 0%, $forthcol 100%)
+          color: #fff
+          letter-spacing: 0.2rem
+          transition: all ease 300ms
+          &:hover
+            transform: translateY(3px)
+            box-shadow: 0 10px 6px -7px #000
