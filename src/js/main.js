@@ -4,7 +4,7 @@ window.onload = function(){
 		if(cookieVal[1] == "yes"){
 			$("#cookies").css({
 				'opacity':'0',
-				'tran8sform':'translate(0,100%)'
+				'transform':'translate(0,100%)'
 			});
 		}
 	}
