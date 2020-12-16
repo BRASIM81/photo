@@ -1,16 +1,16 @@
-const   gulp = require('gulp'),
-        autoprefixer = require('gulp-autoprefixer'),
-        browsersync = require('browser-sync').create(),
-        reload = browsersync.reload,
-        sass = require('gulp-sass'),
-        cleancss = require('gulp-clean-css'),
-        sourcemaps = require('gulp-sourcemaps'),
-        concat = require('gulp-concat'),
-        imagemin = require('gulp-imagemin'),
-        changed = require('gulp-changed'),
-        uglify = require('gulp-uglify'),
-        pug = require('gulp-pug'),
-        lineec = require('gulp-line-ending-corrector');
+var gulp = require('gulp'),
+    autoprefixer = require('gulp-autoprefixer'),
+    browsersync = require('browser-sync').create(),
+    reload = browsersync.reload,
+    sass = require('gulp-sass'),
+    cleancss = require('gulp-clean-css'),
+    sourcemaps = require('gulp-sourcemaps'),
+    concat = require('gulp-concat'),
+    imagemin = require('gulp-imagemin'),
+    changed = require('gulp-changed'),
+    uglify = require('gulp-uglify'),
+    pug = require('gulp-pug'),
+    lineec = require('gulp-line-ending-corrector');
 
 function css(){
     return gulp.src('./src/sass/**/*.sass')
