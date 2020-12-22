@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        include includes/head
+        title Simon R Brain - photography
+    body
+        include includes/nav
+        include includes/carousel
+        
+        h1.wow.fadeIn Contact Me
+        .container
+          form(action="")
+            .form-row
+              .col-md-4.mb-3
+                label(for="") First Name
+                input.form-control(type="", placeholder="JOE " required)
+              .col-md-4.mb-3
+                label(for="") Last Name
+                input.form-control(type="", placeholder="BLOGS" required)
+              .col-md-4.mb-3
+                label(for="") Username
+                .input-group
+                  .input-group-prepnd
+                    span.input-group-text#inputGrupPrepend @
+                  input.form-control(type="", placeholder="USERNAME" required)
+            .form-row
+              .col.md-6.mb-3
+                label(for="") Address
+                input.form-control(type="", placeholder="" required)
+              .col-md-3.mb-3
+                label(for="") Postcode
+                input.form-control(type="", placeholder="" required)
+              .col-md-3.mb-3
+                label(for="") Tel
+                input.form-control(type="", placeholder="" required)
+            button.btn.btn-primary.m-3(type="submit") Send
+        include includes/footer
