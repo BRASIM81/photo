@@ -8,7 +8,7 @@ html(lang="en")
         include includes/carousel
         
         h1.wow.fadeIn Contact Me
-        .container
+        .container#contact
           form(action="")
             .form-row
               .col-md-4.mb-3
@@ -33,5 +33,10 @@ html(lang="en")
               .col-md-3.mb-3
                 label(for="") Tel
                 input.form-control(type="", placeholder="" required)
-            button.btn.btn-primary.m-3(type="submit") Send
+            .form-row
+              .col-md-12
+                label(for="") Message
+                textarea.form-control(name="", placeholder="Message...." cols="30", rows="10", required)
+            button.btn.btn-success.m-3.d-shadow(type="submit") Send Message
+            button.btn.btn-danger.m-3.d-shadow(type="reset") Reset
         include includes/footer
