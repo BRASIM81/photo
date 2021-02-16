@@ -9,7 +9,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "homepage": "http://srbphoto.tk",
+  "homepage": "https://srbphoto.tk",
   "devDependencies": {
     "browser-sync": "^2.26.14",
     "gulp": "^4.0.2",
