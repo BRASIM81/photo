@@ -2,7 +2,7 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     browsersync = require('browser-sync').create(),
     reload = browsersync.reload,
-    sass = require('gulp-sass'),
+    sass = require('gulp-sass')(require('sass')),
     cleancss = require('gulp-clean-css'),
     sourcemaps = require('gulp-sourcemaps'),
     concat = require('gulp-concat'),
@@ -14,12 +14,12 @@ var gulp = require('gulp'),
 
 function css(){
     return gulp.src('./src/sass/**/*.sass')
-    .pipe(sourcemaps.init({loadMaps: true}))
+    .pipe(sourcemaps.init({loadMaps: false}))
     .pipe(sass({
         outputStyle: 'compressed'
     }).on('error', sass.logError))
     .pipe(autoprefixer('last 2 versions'))
-    .pipe(sourcemaps.write('./maps'))
+    //.pipe(sourcemaps.write('./maps'))
     .pipe(lineec())
     .pipe(gulp.dest('./dest/css'));
 }
