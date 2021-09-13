@@ -19,9 +19,8 @@ footer
           padding: 0.5em 1em
           text-shadow: -1px 1px 2px #000
           transition: all ease 300ms
+          @extend .d-shadow
           &:hover
-            transform: translateY(3px)
-            box-shadow: 0 10px 6px -7px #000
             span
               animation-name: tada
               animation-duration: 1s
@@ -37,7 +36,10 @@ footer
       max-width: 80vw
     transition: all cubic-bezier(.21, -2, .51, 3.4) 300ms
     .modal-content
+      background-image: linear-gradient(-17deg, $forthcol 20%, lighten($forthcol, 30%) 90%)
+      box-shadow: 0 0.7em 0.3em -0.5em rgba(#000, 0.5)
       .modal-header
+        border-bottom: none
         button
           font-size: 4rem
           position: absolute
@@ -59,10 +61,7 @@ footer
           font-size: 2rem
           letter-spacing: 0.4rem
           text-shadow: -1px 1px 1px #000
-          transition: all ease 300ms
-          &:hover
-            transform: translateY(3px)
-            box-shadow: 0 10px 6px -7px #000
+          @extend .d-shadow
           i.fab, i.far
             float: left
             line-height: 2rem
@@ -73,11 +72,9 @@ footer
               animation-name: tada
               animation-duration: 1s
       .modal-footer
+        border-top: none
         button
           background: linear-gradient(-8deg, lighten($forthcol, 25%) 0%, $forthcol 100%)
           color: #fff
           letter-spacing: 0.2rem
-          transition: all ease 300ms
-          &:hover
-            transform: translateY(3px)
-            box-shadow: 0 10px 6px -7px #000
+          @extend .d-shadow
