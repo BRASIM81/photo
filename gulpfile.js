@@ -56,7 +56,7 @@ function watch() {
         server: {
             baseDir: './dest/'
         },
-        reloadDelay: 1800
+        reloadDelay: 2500
     });
     gulp.watch('./src/sass/**/*.sass', css);
     gulp.watch('./src/js/**/*.js', javascript);
