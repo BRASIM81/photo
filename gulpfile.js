@@ -65,8 +65,6 @@ function watch() {
     gulp.watch(['./dest/*.html', './src/sass/**/*.sass', './src/js/**/*.js', './src/img/*.jpg']).on('change', browsersync.reload);
 }
 
-fgrfderfdz
-
 exports.css = css;
 exports.javascript = javascript;
 exports.imgmin = imgmin;
