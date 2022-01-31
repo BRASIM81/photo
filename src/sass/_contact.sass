@@ -1,9 +1,23 @@
 #wrap
-  input, textarea
-    @extend .d-shadow
+  width: 100vw
+  padding: 0 calc(min(.3rem, .5rem))  
   @extend .bg-grad
+  .container
+    margin: 0 0 0 auto
+    padding: 0 0 0 18px
+    @media screen and ( min-width: 768px )
+      padding: 0 15px 
+  input, textarea
+    box-shadow: 0 .5em .6em -.47em rgba(black, .8)
+  label
+    font-size: 1.3rem
+    font-weight: 600
   .btn
     @extend .d-shadow
+    padding: .5em 1.4em
+    letter-spacing: .15em
+    font-weight: 600
+    text-shadow: 0 .1em .11em rgba(black, .8)
     a 
       color: #fff
       text-decoration: none
