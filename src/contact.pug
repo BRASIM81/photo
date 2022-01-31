@@ -9,20 +9,28 @@ html(lang="en")
         #wrap
           .container#contact
             h1.wow.fadeIn.display-2.py-2 Contact Me
-            <form method="post" action="" class="pb-4">
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input id="name" class="form-control" type="text" name="name">
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input id="email" class="form-control" type="email" name="email">
-              </div>
-              <div class="form-group">
-                <label for="msg">Mesage</label>
-                <textarea id="msg" class="form-control" name="msg" rows="5"></textarea>
-              </div>
-              <button class="btn btn-success btn-lg mr-3" type="submit">Send</button>
-              <button class="btn btn-danger btn-lg" type="reset">Reset</button>
-            </form>
+            .row
+              .col-sm-7
+                <form method="post" action="" class="pb-4">
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input id="name" class="form-control" type="text" name="name">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" class="form-control" type="email" name="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="msg">Mesage</label>
+                    <textarea id="msg" class="form-control" name="msg" rows="5"></textarea>
+                  </div>
+                  <button class="btn btn-success btn-lg mr-3" type="submit">Send</button>
+                  <button class="btn btn-danger btn-lg" type="reset">Reset</button>
+                </form>
+              .col-sm-4.d-flex.justify-content-center.align-items-center.flex-column
+                button.btn.btn-lg.btn-success.w-100.my-4
+                  a(href="mailto:simonrbrain@yahoo.co.uk")  Email Me... 
+                button.btn.btn-lg.btn-success.w-100.my-4
+                  a(href="tel:+44")  Call Me... 
+          #googleMap.mt-3
         include includes/footer
