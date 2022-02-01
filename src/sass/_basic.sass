@@ -36,10 +36,14 @@ hr
 	background: linear-gradient(to right, $firstcol 25%, $secondcol 25%, $secondcol 50%, $thirdcol 50%, $thirdcol 75%, $forthcol 75%)
 .bg-grad
 	background-image: linear-gradient(17deg, $forthcol 0%, lighten($secondcol, 15%) 100%)
+.b-shadow
+	box-shadow: 0 .5em .6em -.45em rgba(black, .8)
 .d-shadow
-	box-shadow: 0 0.7em 0.3em -0.5em rgba(#000, 0.5)
+	// box-shadow: 0 0.7em 0.3em -0.5em rgba(#000, 0.5)
+	box-shadow: 0 .5em .4em -.45em rgba(black, .8)
 	transition: all ease 300ms
 	&:hover
 		transform: translateY(3px)
-		box-shadow: 0 0.45em 0.25em -0.3em rgba(#000, 0.4)
-		
+		box-shadow: 0 0.45em 0.25em -0.3em rgba(#000, 0.4)	
+.justify-content-space-evenly
+	justify-content: space-evenly
