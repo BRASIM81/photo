@@ -1,28 +1,17 @@
 .video-wrap
   position: relative
-  height: 170px
+  width: 100%
+  aspect-ratio: 22 / 8
   overflow: hidden
-  @media (min-width: 796px)
-    height: 350px
-  @media (min-width: 975px)
-    height: 400px
   video
     position: relative
-    top: 0px
+    top: 0
     left: 0
     right: 0
     height: auto
     width: 100%
     z-index: -2
     object-fit: cover
-    @media (min-width: 796px)
-      top: 0
-      width: 100%
-      height: auto
-    @media (min-width: 975px)
-      width: 100%
-      height: auto
-      top: -100px
   .video-overlay
     position: absolute
     top: 0
