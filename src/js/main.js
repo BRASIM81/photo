@@ -26,3 +26,24 @@ $(document).ready(function(){
 		});
 	});
 });
+
+const rippleBtns = document.querySelectorAll(".ripple");
+
+function mousePosCustomPos(event, element){
+	let posX = event.offsetX;
+	let posY = event.offsetY;
+
+	element.style.setProperty("--x", posX + "px");
+	element.style.setProperty("--y", posY + "px");
+
+}
+
+rippleBtns.forEach(rippleBtn =>{
+	rippleBtn.addEventListener("mousedown", (e) => {
+		mousePosCustomPos(e, rippleBtn);
+		rippleBtn.classList.add("pulse");
+		rippleBtn.addEventListener("animationend", () => {
+			rippleBtn.classList.remove("pulse");
+		});
+	});
+});
