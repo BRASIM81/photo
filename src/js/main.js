@@ -26,16 +26,3 @@ $(document).ready(function(){
 		});
 	});
 });
-function myMap() {
-	var myCenter = new google.maps.LatLng(52.102016, -1.922703);
-	var mapProp = {
-		center: myCenter,
-		zoom: 16,
-		mapTypeId: google.maps.MapTypeId.HYBRID
-	};
-	var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-	var marker = new google.maps.Marker({
-		position: myCenter,
-	});
-	marker.setMap(map);
-}
