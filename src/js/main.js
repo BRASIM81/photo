@@ -39,7 +39,7 @@ function mousePosCustomPos(event, element){
 }
 
 rippleBtns.forEach(rippleBtn =>{
-	rippleBtn.addEventListener("mousedown", (e) => {
+	rippleBtn.addEventListener("click", (e) => {
 		mousePosCustomPos(e, rippleBtn);
 		rippleBtn.classList.add("pulse");
 		rippleBtn.onanimationend = () => {
