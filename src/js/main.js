@@ -27,7 +27,7 @@ $(document).ready(function(){
 	});
 });
 
-const rippleBtns = document.querySelectorAll(".ripple");
+const rippleBtns 	= document.querySelectorAll(".ripple");
 
 function mousePosCustomPos(event, element){
 	let posX = event.offsetX;
@@ -42,8 +42,8 @@ rippleBtns.forEach(rippleBtn =>{
 	rippleBtn.addEventListener("mousedown", (e) => {
 		mousePosCustomPos(e, rippleBtn);
 		rippleBtn.classList.add("pulse");
-		rippleBtn.addEventListener("animationend", () => {
+		rippleBtn.onanimationend = () => {
 			rippleBtn.classList.remove("pulse");
-		});
+		};
 	});
 });
